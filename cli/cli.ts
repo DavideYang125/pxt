@@ -3710,7 +3710,7 @@ export function preCacheHexAsync() {
     let previousCwd = process.cwd();
     process.chdir(projectPath);
     pxt.log("Installing project's packages (pxt install)");
-    
+
     return installAsync()
         .then(() => {
             // Build in the cloud
